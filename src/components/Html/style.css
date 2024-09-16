@@ -1,0 +1,8 @@
+/* clamp = membuat responsive (200px = Minimum, 50% Widht nya, 300px maximum) */
+.clamp {
+  width: clamp(200px, 50%, 300px);
+}
+/* Drop Shadow image transparent hanya untuk image yang tranparent*/
+.imageFilter {
+  filter: drop-shadow(10px 10px 15px lightgrey);
+}

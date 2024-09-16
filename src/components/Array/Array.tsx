@@ -5,7 +5,7 @@ type Users = {
   name: string;
   age: number;
 };
-const App = () => {
+const Array = () => {
   const [usersResource, setUsersResource] = useState<Users[]>([]);
   //Untuk menambah value
   const handleAdd = () => {
@@ -17,6 +17,15 @@ const App = () => {
     setUsersResource([...usersResource, User]);
     //cara ke 2
     setUsersResource(usersResource.concat(User));
+
+    // cara ke 3 mengabung kan array Ato Menambah
+
+    let arr1 = [0,1,2,3,4]
+    let arr2 = [0,1,2,3,4]
+    let mergeArray = arr1.concat(arr2)
+    // Or
+    //let mergeArray = [...arr1, arr2]
+
   };
   //Untuk menampilkan value
   const handleDisplay = () => {
@@ -71,7 +80,13 @@ const App = () => {
     console.log(uniqueArry);
   };
 
+  //Membuat Array readOnly
+  const readOnly =() => {
+    const foo = [1,2,3,4,5,6];
+    const bar = ReadonlyArray<number> = [...foo];
+  }
+
   return <div>App</div>;
 };
 
-export default App;
+export default Array;
